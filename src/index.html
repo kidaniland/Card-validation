@@ -7,7 +7,26 @@
   </head>
   <body>
     <header></header>
-    <main></main>
+    <main>
+      <section class="containerA" id="CreditCard_Validation">
+        <h1>Verifica que tu tarjeta de crédito sea real o falsa</h1>
+        <div id="vcard">
+          <label for="">
+              <h2>Ingresa los números sin guión o espacios</h2>
+              <input type="text" maxlength="16" name="cardNumber" id="cardNumber" placeholder="Números aquí" onkeypress="return soloNumeros(event)">
+          </label>
+          <input type="button" value="Validar" class="botonV" id="botonV">
+        </div>
+      </section>
+      <section class="containerB">
+        <div id="wrong">
+          <h3>El número <strong>NO PERTENECE</strong> a una tajeta de crédito real</h3>
+        </div>
+        <div id="correct">
+          <h3>El número pertenece a una tarjeta de crédito real</h3>
+        </div>
+      </section>
+    </main>
     <footer></footer>
     <script src="index.js" type="module"></script>
   </body>
