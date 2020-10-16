@@ -1,5 +1,5 @@
 const validator = {
-   maria: "aqui ando"
+   maria: 'el numero'
 };
 
 export default validator;

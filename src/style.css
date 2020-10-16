@@ -7,10 +7,22 @@ html {
     font-size: 62.5%;
 }
 header {
-    background-color: aquamarine;
+    background-color: cadetblue;
 }
 main {
     background-color: beige;
+}
+/*-------------Tarjeta ejemplo-----------------*/
+.card {
+    background-color: lightgreen;
+}
+/*-------------Formulario tarjeta--------------*/
+.formularioTarjeta{
+    background-color: lightskyblue;
+}
+/*-------------Respuesta validación------------*/
+.respuesta {
+    background-color: lightsalmon;
 }
 footer {
     background-color: cadetblue;

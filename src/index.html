@@ -6,28 +6,52 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header></header>
+    <header>
+      <div>
+        <h1>
+          Valída si tu número de tarjeta de crédito es real o falsa
+        </h1>
+      </div>
+    </header>
     <main>
-      <section class="containerA" id="CreditCard_Validation">
-        <h1>Verifica que tu tarjeta de crédito sea real o falsa</h1>
-        <div id="vcard">
-          <label for="">
-              <h2>Ingresa los números sin guión o espacios</h2>
-              <input type="text" maxlength="16" name="cardNumber" id="cardNumber" placeholder="Números aquí" onkeypress="return soloNumeros(event)">
-          </label>
-          <input type="button" value="Validar" class="botonV" id="botonV">
-        </div>
-      </section>
-      <section class="containerB">
-        <div id="wrong">
-          <h3>El número <strong>NO PERTENECE</strong> a una tajeta de crédito real</h3>
-        </div>
-        <div id="correct">
-          <h3>El número pertenece a una tarjeta de crédito real</h3>
-        </div>
-      </section>
+     <!----------------Tarjeta ejemplo----------------------> 
+        <section class="card" id="card">
+          <div class="logo-marca">
+            <img src="" alt=""><!--Para la marca-->
+          </div>
+          <div>
+            <img src="" alt="" class="chip"><!--Para el chip-->
+          </div>
+          <div class="datos" id="number">
+            <p class="label">Número de tarjeta</p>
+            <p class="numero">#### #### #### ####</p>
+          </div>
+        </section>
+    <!-------------------Formulario-------------------------->
+        <form action="" id="formularioTarjeta" class="formularioTarjeta">
+          <div class="grupo">  
+            <label for="cardNumber">Número de tarjeta</label>
+            <input type="text" maxlength="19" id="cardNumber" placeholder="0000 0000 0000 0000" autocomplete="off">
+          </div>  
+          <input type="button" value="Validar" class="botonValidar" id="botonValidar">
+        </form>
+    <!--------------Repuestas de validación----------------->
+        <section class="respuesta" id="respuesta">
+          <div id="wrong">
+            <h3>El número NO PERTENECE a una tajeta de crédito real</h3>
+          </div>
+          <div id="correct">
+            <h3>El número pertenece a una tarjeta de crédito real</h3>
+          </div>
+        </section>
     </main>
-    <footer></footer>
+    <footer>
+      <div>
+        <h1>
+          Espacio reservado para lo que se me ocurra colocar de footer...
+        </h1>
+      </div>
+    </footer>
     <script src="index.js" type="module"></script>
   </body>
 </html>
