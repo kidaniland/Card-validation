@@ -9,8 +9,8 @@ let bValidar = document.getElementById('botonValidar');
 let rWrong = document.getElementById('wrong');
 let rCorrect = document.getElementById('correct');
 
-//ACCEDER AL VALOR DEL IMPUT Y METERLOS EN UNA VARIABLE
-formulario.cardNumber.addEventListener('keyup', (e) => {
+//ASEGURARSE QUE LOS VALORES INGRESADOS SEAN SOLO NUMEROS
+const validateKeyup = (e) => {
     let numeroTarjeta = e.target.value;//el target nos lo dios la consola cuando activamos el evento reconoció que lo presionado era un número y ahora solo guardamos ese valor en la variable.
     formulario.cardNumber.value = numeroTarjeta //continua en .replace()
         //Eliminando espacios en blanco con el método replace
@@ -21,6 +21,15 @@ formulario.cardNumber.addEventListener('keyup', (e) => {
         .replace(/([0-9]{4})/g, '$1 ')//busca numeros del 0 al 9 y agrupalo cada 4 digitos, $1 agrega espacio
         //Metodo trimp quita el último espacio de una cadena de texto
         .trim();
+    //METIENDO EL VALOR DEL IMPUT EN UNA VARIABLE
+    cardNumber = numeroTarjeta;
+}
+
+formulario.cardNumber.addEventListener('keyup', validateKeyup)
+
+bValidar.addEventListener('click', () =>{
+    formulario.value = cardNumber;
+    console.log ('yujuu --> ' + typeof parseInt(cardNumber));
 })
 
 
