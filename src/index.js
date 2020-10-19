@@ -18,19 +18,36 @@ const validateKeyup = (e) => {
         //Eliminando las letras y las reemplace por nada...asi se borran solas si por error las colocan
         .replace(/\D/g, '')
         //Poniendo espacio cada 4 numeros
-        .replace(/([0-9]{4})/g, '$1 ')//busca numeros del 0 al 9 y agrupalo cada 4 digitos, $1 agrega espacio
+        .replace(/([0-9]{4})/g, '$1 ')//busca numeros del 0 al 9 y agrupalo cada 4 digitos, $1=agrega espacio
         //Metodo trimp quita el último espacio de una cadena de texto
         .trim();
+        
     //METIENDO EL VALOR DEL IMPUT EN UNA VARIABLE
     cardNumber = numeroTarjeta;
 }
 
+//evento del input
 formulario.cardNumber.addEventListener('keyup', validateKeyup)
 
+
+//BOTON validar
 bValidar.addEventListener('click', () =>{
     formulario.value = cardNumber;
-    console.log ('yujuu --> ' + typeof parseInt(cardNumber));
+    //CONDICIÓN PARA QUE LA LONGITUD DE LOS CARACTERES EN EL INPUT SEAN 16
+    if (!(/\d{4}\s\d{4}\s\d{4}\s\d{4}/.test(cardNumber))){
+        alert("ERROR: Le faltan dígitos a tu tarjeta de crédito");
+    }
+    else{
+        console.log("todo bien")
+    }
+     //Ahora al enviar se leerá como número lo que ingresó por el input
+     cardNumber = typeof parseInt(cardNumber);
 })
+
+
+
+
+
 
 
 
