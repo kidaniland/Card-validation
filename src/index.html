@@ -13,27 +13,29 @@
         </h1>
       </div>
     </header>
-    <main>
+    <main> 
      <!----------------Tarjeta ejemplo----------------------> 
         <section class="card" id="card">
           <div class="tarjetaEjemplo">
             <div class="logo-marca">
-              <img src="images/logos/visa.png" alt=""><!--Para la marca-->
+              <img src="images/logos/mastercard.png" alt=""><!--Para la marca-->
             </div>
-            <div>
-              <img src="" alt="" class="chip"><!--Para el chip-->
+            <div class="chip">
+              <img src="images/chip-tarjeta.png" alt="" class="chip"><!--Para el chip-->
             </div>
             <div class="datos" id="number">
               <p class="label">Número de tarjeta</p>
               <p class="numero">#### #### #### ####</p>
+              <p class="label">Nombre de tarjeta</p>
+              <p class="numero">Credit card validator</p>
             </div>
           </div>
         </section>
     <!-------------------Formulario-------------------------->
         <form action="" id="formularioTarjeta" class="formularioTarjeta">
           <div class="grupo">  
-            <label for="cardNumber">Número de tarjeta</label>
-            <input type="text" maxlength="19" id="cardNumber" placeholder="0000 0000 0000 0000" autocomplete="off">
+            <label for="cardNumber" class="label">Número de tarjeta</label>
+            <input type="text" class="input" maxlength="19" id="cardNumber" placeholder="0000 0000 0000 0000" autocomplete="off">
           </div>  
           <input type="button" value="Validar" class="botonValidar" id="botonValidar">
         </form>
