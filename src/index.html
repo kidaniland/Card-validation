@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <!-------------------HEADER----------------------------------------->
     <header>
       <div>
         <h1>
@@ -13,6 +14,7 @@
         </h1>
       </div>
     </header>
+    <!----------------------MAIN--------------------------------------->
     <main> 
      <!----------------Tarjeta ejemplo----------------------> 
         <section class="card" id="card">
@@ -34,12 +36,12 @@
     <!-------------------Formulario-------------------------->
         <form action="" id="formularioTarjeta" class="formularioTarjeta">
           <div class="grupo">  
-            <label for="cardNumber" class="label">Número de tarjeta</label>
-            <input type="text" class="input" maxlength="19" id="cardNumber" placeholder="0000 0000 0000 0000" autocomplete="off">
-          </div>  
-          <input type="button" value="Validar" class="botonValidar" id="botonValidar">
+            <label for="inputNumber">Número de tarjeta</label>
+            <input type="text" maxlength="19" id="inputNumber" placeholder="0000 0000 0000 0000" autocomplete="off">
+          </div>
+          <button type="submit" class="btn-enviar">Enviar</button>  
         </form>
-    <!--------------Repuestas de validación----------------->
+    <!--------------Repuestas de validación------------------------------------>
         <section class="respuesta" id="respuesta">
           <div id="wrong">
             <h3>El número NO PERTENECE a una tajeta de crédito real</h3>
@@ -49,6 +51,7 @@
           </div>
         </section>
     </main>
+    <!----------------------------FOOTER------------------------------------->
     <footer>
       <div>
         <h1>

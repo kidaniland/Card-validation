@@ -41,6 +41,7 @@ main {
     flex-direction: column;
     justify-content: space-between;
     box-shadow:  0 1rem 1rem 0 rgba(90,116,148,0.3);
+    z-index: ;
 }
 .tarjetaEjemplo .logo-marca {
     text-align: right;
