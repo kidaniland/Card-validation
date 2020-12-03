@@ -2,8 +2,9 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Tarjeta de crédito válida</title>
-    <link rel="stylesheet" href="style.css" />
+    <title>Credit Card Validator</title>
+    <meta name="viewport" content="width =device-width, inictial-scale=1.0">
+    <link rel="stylesheet" href="style.css"/>
   </head>
   <body>
     <!-------------------HEADER----------------------------------------->
@@ -27,9 +28,9 @@
             </div>
             <div class="datos" id="number">
               <p class="label">Número de tarjeta</p>
-              <p class="numero">#### #### #### ####</p>
+              <p class="numero">1234 5678 9012 3456</p>
               <p class="label">Nombre de tarjeta</p>
-              <p class="numero">Credit card validator</p>
+              <p class="numero">Maria Villa</p>
             </div>
           </div>
         </section>
@@ -43,10 +44,10 @@
         </form>
     <!--------------Repuestas de validación------------------------------------>
         <section class="respuesta" id="respuesta">
-          <div id="wrong">
+          <div id="wrong" class="wrong">
             <h3>El número NO PERTENECE a una tajeta de crédito real</h3>
           </div>
-          <div id="correct">
+          <div id="correct" class="correct">
             <h3>El número pertenece a una tarjeta de crédito real</h3>
           </div>
         </section>

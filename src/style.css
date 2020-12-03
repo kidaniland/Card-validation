@@ -41,8 +41,8 @@ main {
     flex-direction: column;
     justify-content: space-between;
     box-shadow:  0 1rem 1rem 0 rgba(90,116,148,0.3);
-    z-index: ;
 }
+
 .tarjetaEjemplo .logo-marca {
     text-align: right;
     min-height: 5rem;
@@ -77,43 +77,103 @@ main {
     background: #fff;
     width: 100%;
     max-width: 70rem;
-    padding: 15rem 3rem 3rem 3rem;
+    padding: 1.4rem 3rem 3rem 3rem;
     border-radius: 1rem;
     position: relative;
-    top: -23rem;
+    top: -20rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     box-shadow:  0 1rem 1rem 0 rgba(90,116,148,0.3);
 }
-.formularioTarjeta .label {
+
+.formularioTarjeta .grupo {
+    height: 20 rem;
+}
+
+.formularioTarjeta label {
     display: block;
 	color: #7d8994;
-	margin-bottom: 0.4rem;
-	font-size: 1.6rem;
+	margin-bottom: 2.4rem;
+	font-size: 2rem;
 }
-.formularioTarjeta .input {
+
+.formularioTarjeta input {
     border: 0.2rem solid #CED6E0;
 	font-size: 1.8rem;
 	height: 5rem;
 	width: 100%;
 	padding: 0.5rem 1.2rem;
-	border-radius: 5px;
+    border-radius: 5px;
+    margin-bottom: 0.6rem;
+    margin-top: -1rem;
 }
-.formularioTarjeta .botonValidar {
+
+.formularioTarjeta .btn-validate {
     border: none;
 	padding: 1rem;
 	font-size: 2.2rem;
 	color: #fff;
 	background: #2364d2;
 	box-shadow: 0.2rem 0.2rem 1rem 0rem rgba(0,85,212,0.4);
-	cursor: pointer;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.formularioTarjeta input:hover { /*Cuando pasemos el cursor se resaltará el input*/
+    border: 0.2rem solid #93bded;
+}
+
+.formularioTarjeta .btn-validate:hover {
+    background: #1850b1;
 }
 
 /*-------------Respuesta validación------------*/
 .respuesta {
-    background-color: lightsalmon;
+    display: none;
+    background: #fff;
+    width: 100%;
+    max-width: 70rem;
+    padding: 3rem 3rem 3rem 3rem;
+    border-radius: 1rem;
+    position: relative;
+    top: -18rem;
+    /*display: flex;*/
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow:  0 1rem 1rem 0 rgba(90,116,148,0.3);
 }
+
+.respuesta .wrong{ /*falta color,tamaño y tipo de fuente*/
+    display: none;
+    background: #fff;
+    width: 100%;
+    max-width: 70rem;
+    padding: 3rem 3rem 3rem 3rem;
+    border-radius: 1rem;
+    position: relative;
+    top: -18rem;
+    /*display: flex;*/
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow:  0 1rem 1rem 0 rgba(90,116,148,0.3);
+}
+
+.respuesta .correct{ /*falta color,tamaño y tipo de fuente*/
+    display: none;
+    background: #fff;
+    width: 100%;
+    max-width: 70rem;
+    padding: 3rem 3rem 3rem 3rem;
+    border-radius: 1rem;
+    position: relative;
+    top: -18rem;
+    /*display: flex;*/
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow:  0 1rem 1rem 0 rgba(90,116,148,0.3);
+}
+/*--------------------FOOTER-------------------------*/
 footer {
     background-color: cadetblue;
 }
