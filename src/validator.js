@@ -6,7 +6,7 @@ maskify(num);*/
 const validator = {
 //retornar un BOOLEAN dependiendo si es válida o no la tarjeta
    isValid: function(number){
-      //console.log("esto llega en number>>>", number);
+      console.log("esto llega en number>>>", number);
       let totalOdd = 0;
       let totalEven = 0;
       let add = 0;
@@ -38,9 +38,11 @@ const validator = {
       //console.log("SUMA DE TODO", add);
    
       if(add % 10 ===0){
+         console.log("RETORNA TRUE");
          return true;
       }
       else{
+         console.log("RETORNA FALSE");
          return false;
       }
    },

@@ -35,20 +35,17 @@
           </div>
         </section>
     <!-------------------Formulario-------------------------->
-        <form action="" id="formularioTarjeta" class="formularioTarjeta">
+        <form id="formularioTarjeta" class="formularioTarjeta">
           <div class="grupo">  
             <label for="inputNumber">Número de tarjeta</label>
             <input type="text" maxlength="16" id="inputNumber"  autocomplete="off">
           </div>
-          <button type="submit" class="btn-validate" id="btn-validate">Validar</button>  
+          <button type="button" class="btn-validate" id="btn-validate">Validar</button>  
         </form>
     <!--------------Repuestas de validación------------------------------------>
-        <section class="respuesta" id="respuesta">
-          <div id="wrong" class="wrong">
-            <h3>El número NO PERTENECE a una tajeta de crédito real</h3>
-          </div>
-          <div id="correct" class="correct">
-            <h3>El número pertenece a una tarjeta de crédito real</h3>
+        <section class="respuesta" id="respuesta" style="display: none;">
+          <div id="respTarjeta" class="respTarjeta">
+            <span id="FalseTrue"></span>
           </div>
         </section>
     </main>
