@@ -8,11 +8,13 @@
   </head>
   <body>
     <!-------------------HEADER----------------------------------------->
-    <header>
-      <div>
-        <h1>
-          Valída si tu número de tarjeta de crédito es real o falsa
-        </h1>
+    <header class="header" id="header">
+      <div class="wrapper">
+        <div class="logo">Card Validator</div>
+        <nav>
+          <a href="#contenido">Algorito de Luhn</a>
+          <a href="#card">Inicio</a>
+        </nav>
       </div>
     </header>
     <!----------------------MAIN--------------------------------------->
@@ -45,17 +47,25 @@
     <!--------------Repuestas de validación------------------------------------>
         <section class="respuesta" id="respuesta" style="display: none;">
           <div id="respTarjeta" class="respTarjeta">
-            <span id="FalseTrue"></span>
+            <p id="FalseTrue"></p>
           </div>
+        </section>
+      <!------------------CONTENIDO------------------------------------------->
+        <section class="contenido wrapper" id="contenido">
+          <h1>Algoritmo de Luhn</h1>
+          <p>Fue creado por el ingeniero informático Hans Peter Luhn, con el fin de validar posibles errores a la hora de la transcripción de una secuencia de números (cambiar un número por otro o identificar posibles intercambios de dígitos). Este algoritmo está basado en el principio del módulo aritmético (suma matemática mod-10) que permitía la identificación de errores durante la digitación o transmisión de una una cantidad considerable de números entre una fuente y otra.</p><br>
+          <h1>¿Cómo funciona?</h1>
+          <p>Para generar el dígito de verificación empleando el algoritmo de Luhn se deben seguir estos pasos:<br>
+          -En una secuencia de dígitos dada, el dígito de verificación será el último valor, que en principio se desconoce.<br>
+          -Partiendo de esa última posición, se multiplica cada dígito de posición par (contando desde la derecha) por dos. Si el resultado es un número de dos dígitos, entonces se suman estos dos valores.<br>
+          -Posteriormente, se suman todos los dígitos obtenidos.<br>
+          -El dígito de verificación es el número que se obtiene como residuo después de dividir ese resultado entre 10 (que es lo que en matemáticas se denomina mod-10). En otras palabras, el dígito de verificación es el número que debe agregarse a este resultado para hacer el siguiente múltiplo de 10.</p><br>
+          <img src="./images/PAN_valido_luhn.png" alt="">
         </section>
     </main>
     <!----------------------------FOOTER------------------------------------->
     <footer>
-      <div>
-        <h1>
-          Espacio reservado para lo que se me ocurra colocar de footer...
-        </h1>
-      </div>
+        <p>Hecho por: @kidaniland - proyecto de práctica 2 - fecha: 06/12/2020</p>
     </footer>
     <script src="index.js" type="module"></script>
   </body>

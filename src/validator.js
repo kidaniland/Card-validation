@@ -38,11 +38,11 @@ const validator = {
       //console.log("SUMA DE TODO", add);
    
       if(add % 10 ===0){
-         console.log("RETORNA TRUE");
+         //console.log("RETORNA TRUE");
          return true;
       }
       else{
-         console.log("RETORNA FALSE");
+         //console.log("RETORNA FALSE");
          return false;
       }
    },
