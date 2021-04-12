@@ -1,5 +1,8 @@
 # Validador de tarjetas de crédito
 
+![tarjeta](https://live.staticflickr.com/65535/51111109877_37f5030007_o.jpg)
+
+
 # Sobre el proyecto
 
 La finalidad de esta práctica es construir una aplicación web que le permita al
